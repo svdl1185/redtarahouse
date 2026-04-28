@@ -469,12 +469,16 @@
       if (pdfButton) {
         pdfButton.addEventListener("click", async () => {
           if (!window.html2pdf) return;
-          const content = document.getElementById("pdf-export");
-          if (!content) return;
+          const source = document.getElementById("pdf-export");
+          if (!source) return;
 
           const originalText = pdfButton.textContent;
           pdfButton.disabled = true;
           pdfButton.textContent = "Preparing PDF...";
+
+          const exportNode = source.cloneNode(true);
+          exportNode.id = "pdf-export-render";
+          document.body.appendChild(exportNode);
 
           const options = {
             margin: [12, 12, 12, 12],
@@ -482,12 +486,16 @@
             image: { type: "jpeg", quality: 0.98 },
             html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
             jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-            pagebreak: { mode: ["avoid-all", "css", "legacy"] }
+            pagebreak: { mode: ["css", "legacy"] }
           };
 
-          await window.html2pdf().set(options).from(content).save();
-          pdfButton.disabled = false;
-          pdfButton.textContent = originalText;
+          try {
+            await window.html2pdf().set(options).from(exportNode).save();
+          } finally {
+            exportNode.remove();
+            pdfButton.disabled = false;
+            pdfButton.textContent = originalText;
+          }
         });
       }
     </script>
