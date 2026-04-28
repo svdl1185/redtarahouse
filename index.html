@@ -37,9 +37,8 @@
           outings, and a few local favorites worth saving.
         </p>
         <div class="hero-actions">
-          <a class="button" href="#quick-start">Start here</a>
           <a class="button button-secondary" href="#local-guide">Explore nearby</a>
-          <button class="button button-tertiary" id="download-pdf" type="button">Download this page as PDF</button>
+          <button class="button button-tertiary" id="download-pdf" type="button">Download guide PDF</button>
         </div>
       </section>
 
@@ -353,11 +352,31 @@
       <p>Red Tara House, Catskill, NY</p>
       <p>Last refreshed April 2026. Please check hours before heading out.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
       const pdfButton = document.getElementById("download-pdf");
       if (pdfButton) {
-        pdfButton.addEventListener("click", () => {
-          window.print();
+        pdfButton.addEventListener("click", async () => {
+          if (!window.html2pdf) return;
+          const content = document.querySelector("main");
+          if (!content) return;
+
+          const originalText = pdfButton.textContent;
+          pdfButton.disabled = true;
+          pdfButton.textContent = "Preparing PDF...";
+
+          const options = {
+            margin: [8, 8, 8, 8],
+            filename: "red-tara-house-guide.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+            pagebreak: { mode: ["css", "legacy"] }
+          };
+
+          await window.html2pdf().set(options).from(content).save();
+          pdfButton.disabled = false;
+          pdfButton.textContent = originalText;
         });
       }
     </script>

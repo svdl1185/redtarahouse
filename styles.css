@@ -138,6 +138,11 @@ main {
   background: #fff6f2;
 }
 
+.button-tertiary:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
 .section {
   max-width: 1120px;
   margin: 0 auto;
@@ -220,6 +225,8 @@ main {
   border: 1px solid var(--line);
   border-radius: 26px;
   box-shadow: var(--shadow);
+  break-inside: avoid-page;
+  page-break-inside: avoid;
 }
 
 .card,
