@@ -135,6 +135,28 @@ main {
   border-top: 1px solid var(--line);
 }
 
+.wifi-banner {
+  margin-top: -22px;
+  margin-bottom: 8px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.wifi-banner h2 {
+  margin: 6px 0 8px;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.wifi-banner p {
+  margin: 0;
+}
+
 .section-heading {
   max-width: 620px;
   margin-bottom: 28px;
@@ -280,15 +302,15 @@ main {
   margin-top: 0;
 }
 
-.muted {
-  max-width: none;
-  background: #efe7dc;
+.subsection-title {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
 }
 
-.muted > * {
-  max-width: 1012px;
-  margin-left: auto;
-  margin-right: auto;
+.practical-divider {
+  margin: 26px 0 18px;
+  border-top: 1px dashed #c9bcab;
 }
 
 .footer {
