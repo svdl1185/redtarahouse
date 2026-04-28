@@ -39,6 +39,7 @@
         <div class="hero-actions">
           <a class="button" href="#quick-start">Start here</a>
           <a class="button button-secondary" href="#local-guide">Explore nearby</a>
+          <button class="button button-tertiary" id="download-pdf" type="button">Download this page as PDF</button>
         </div>
       </section>
 
@@ -243,14 +244,14 @@
           <div>
             <h3>Lunch and dinner</h3>
             <ul>
-              <li><strong>Angel's Latin</strong>, Catskill - affordable, casual Latin food.</li>
-              <li><strong>Creekside Restaurant</strong>, Catskill - American food and waterfront seating on Catskill Creek.</li>
-              <li><strong>New York Restaurant</strong>, Catskill - New American and Polish-inspired dishes downtown.</li>
-              <li><strong>Baba Louie's</strong>, Hudson - sourdough pizza with creative toppings.</li>
-              <li><strong>Feast & Floret</strong>, Hudson - Italian dinner and a polished date-night feel.</li>
-              <li><strong>Rivertown Lodge</strong>, Hudson - dinner, brunch, and cocktails in a relaxed hotel setting.</li>
-              <li><strong>The Maker / Serre</strong>, Hudson - hotel lounge, cafe, cocktails, and a newly rebranded French-influenced restaurant.</li>
-              <li><strong>Hemlock</strong>, Catskill - cozy cocktails and bar food; named by Esquire among its 2025 best bars.</li>
+              <li><strong>Angel's Latin</strong> <span class="price">$</span>, Catskill - affordable, casual Latin food.</li>
+              <li><strong>Baba Louie's</strong> <span class="price">$$</span>, Hudson - sourdough pizza with creative toppings.</li>
+              <li><strong>Creekside Restaurant</strong> <span class="price">$$</span>, Catskill - American food and waterfront seating on Catskill Creek.</li>
+              <li><strong>Hemlock</strong> <span class="price">$$</span>, Catskill - cozy cocktails and bar food; named by Esquire among its 2025 best bars.</li>
+              <li><strong>New York Restaurant</strong> <span class="price">$$-$$$</span>, Catskill - New American and Polish-inspired dishes downtown.</li>
+              <li><strong>Feast & Floret</strong> <span class="price">$$$</span>, Hudson - Italian dinner and a polished date-night feel.</li>
+              <li><strong>Rivertown Lodge</strong> <span class="price">$$$</span>, Hudson - dinner, brunch, and cocktails in a relaxed hotel setting.</li>
+              <li><strong>The Maker / Serre</strong> <span class="price">$$$</span>, Hudson - hotel lounge, cafe, cocktails, and a newly rebranded French-influenced restaurant.</li>
             </ul>
           </div>
         </div>
@@ -352,5 +353,13 @@
       <p>Red Tara House, Catskill, NY</p>
       <p>Last refreshed April 2026. Please check hours before heading out.</p>
     </footer>
+    <script>
+      const pdfButton = document.getElementById("download-pdf");
+      if (pdfButton) {
+        pdfButton.addEventListener("click", () => {
+          window.print();
+        });
+      }
+    </script>
   </body>
 </html>

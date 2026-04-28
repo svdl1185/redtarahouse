@@ -125,6 +125,19 @@ main {
   background: var(--paper);
 }
 
+.button-tertiary {
+  color: var(--accent);
+  background: #fff;
+  border-color: var(--accent);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.button-tertiary:hover {
+  background: #fff6f2;
+}
+
 .section {
   max-width: 1120px;
   margin: 0 auto;
@@ -270,6 +283,12 @@ main {
   margin: 0.55rem 0;
 }
 
+.price {
+  color: var(--accent-dark);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .room-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -357,5 +376,33 @@ main {
 
   .footer {
     flex-direction: column;
+  }
+}
+
+@media print {
+  .site-header,
+  .hero-actions,
+  .footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .section,
+  .hero {
+    max-width: none;
+    padding: 20px 0;
+  }
+
+  .card,
+  .guide-card,
+  .panel,
+  .wifi-banner,
+  .restaurant-list > div {
+    box-shadow: none;
+    border-radius: 10px;
+    break-inside: avoid;
   }
 }
