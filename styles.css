@@ -296,6 +296,41 @@ main {
   letter-spacing: 0.02em;
 }
 
+#pdf-export {
+  position: absolute;
+  left: -99999px;
+  top: 0;
+  width: 794px;
+  padding: 28px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#pdf-export h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  letter-spacing: -0.02em;
+}
+
+#pdf-export h2 {
+  margin: 24px 0 8px;
+  font-size: 20px;
+}
+
+#pdf-export p {
+  margin: 0 0 8px;
+}
+
+#pdf-export ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#pdf-export li {
+  margin: 4px 0;
+}
+
 .room-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
