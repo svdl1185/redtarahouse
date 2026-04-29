@@ -246,6 +246,21 @@ main {
   font-size: 1rem;
 }
 
+.panel .eyebrow.panel-subhead {
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.panel ol.steps {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.panel ol.steps li {
+  margin: 0.5rem 0;
+}
+
 .panel a {
   color: var(--accent);
   text-decoration: underline;
