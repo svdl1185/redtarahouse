@@ -6,7 +6,7 @@ These are owner-facing notes for improving the Airbnb listing based on the curre
 
 The public listing currently presents the property as:
 
-- Catskill Red Tara House
+- Catskill Red Tara Sanctuary
 - Entire home in Catskill, New York
 - 10 guests
 - 4 bedrooms
@@ -20,15 +20,15 @@ The public listing currently presents the property as:
 
 ## Suggested title
 
-Red Tara House: spacious Catskills stay with game room, pond, firepits and 4 ensuite baths
+Red Tara Sanctuary: spacious Catskills stay with game room, pond, firepits and 4 ensuite baths
 
 Shorter option:
 
-Red Tara House | 4BR Catskills stay with game room and pond
+Red Tara Sanctuary | 4BR Catskills stay with game room and pond
 
 ## Suggested description
 
-Red Tara House is a spacious, pet-friendly Catskills retreat in Catskill, NY, close to Hudson, Kaaterskill Falls, North-South Lake, breweries, farm stands, restaurants, and antique shopping. The home is set up for groups and families, with four bedrooms, four full bathrooms, a large dining table, a fully equipped kitchen, multiple gathering spaces, a game room, outdoor firepits, a deck with grill, and a peaceful pond view.
+Red Tara Sanctuary is a spacious, pet-friendly Catskills retreat in Catskill, NY, close to Hudson, Kaaterskill Falls, North-South Lake, breweries, farm stands, restaurants, and antique shopping. The home is set up for groups and families, with four bedrooms, four full bathrooms, a large dining table, a fully equipped kitchen, multiple gathering spaces, a game room, outdoor firepits, a deck with grill, and a peaceful pond view.
 
 The layout works especially well for multi-family trips because each bedroom has its own or adjacent full bathroom. Spend the day hiking, skiing, antiquing in Hudson, exploring local farms, or swimming at nearby lakes, then come back for dinner, games, and a fire outside.
 

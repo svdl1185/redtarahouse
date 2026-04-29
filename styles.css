@@ -246,6 +246,15 @@ main {
   font-size: 1rem;
 }
 
+.panel a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.panel a:hover {
+  color: var(--accent-dark);
+}
+
 .card p,
 .guide-card p,
 .panel p,

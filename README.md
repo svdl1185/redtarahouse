@@ -1,6 +1,6 @@
-# Red Tara House
+# Red Tara Sanctuary
 
-Static guest guide website for Red Tara House in Catskill, NY.
+Static guest guide website for Red Tara Sanctuary in Catskill, NY.
 
 ## Files
 
