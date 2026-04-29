@@ -72,7 +72,30 @@ main {
 .hero {
   max-width: 1120px;
   margin: 0 auto;
-  padding: clamp(72px, 10vw, 132px) clamp(20px, 4vw, 54px) clamp(54px, 8vw, 96px);
+  padding: clamp(48px, 8vw, 96px) clamp(20px, 4vw, 54px) clamp(54px, 8vw, 96px);
+}
+
+.hero-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto clamp(28px, 5vw, 48px);
+  max-width: min(400px, 100%);
+}
+
+.hero-brand-image {
+  width: min(320px, 85vw);
+  height: auto;
+  display: block;
+}
+
+.hero-brand-name {
+  margin: 16px 0 0;
+  font-size: clamp(1.35rem, 3.8vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 .hero h1 {
