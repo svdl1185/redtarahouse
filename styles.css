@@ -52,9 +52,11 @@ a {
 }
 
 .nav {
+  flex: 1;
   display: flex;
   gap: 18px;
   align-items: center;
+  justify-content: flex-start;
   color: var(--muted);
   font-size: 0.94rem;
 }
@@ -72,10 +74,13 @@ a {
 }
 
 .nav-download {
+  margin-left: auto;
   padding: 0;
   background: transparent;
   border: 0;
+  color: var(--accent);
   cursor: pointer;
+  font-weight: 700;
 }
 
 main {
@@ -387,12 +392,13 @@ main {
 @media (max-width: 860px) {
   .site-header {
     position: static;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
   }
 
   .nav {
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .cards.three,
