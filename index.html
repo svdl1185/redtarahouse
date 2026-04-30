@@ -15,12 +15,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20260430-6">
+    <link rel="stylesheet" href="styles.css?v=20260430-7">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Red Tara Sanctuary home">Red Tara Sanctuary</a>
-      <nav class="nav" aria-label="Main navigation">
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
         <a href="#sanctuary">Stay</a>
         <a href="#local-guide">Nearby</a>
         <a href="#outdoors">Outdoors</a>
@@ -427,6 +439,35 @@
           window.print();
         });
       }
+
+      const header = document.querySelector(".site-header");
+      const navToggle = document.getElementById("nav-toggle");
+      const primaryNav = document.getElementById("primary-nav");
+
+      function setNavOpen(open) {
+        if (!header || !navToggle) return;
+        header.classList.toggle("is-open", open);
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      }
+
+      navToggle?.addEventListener("click", () => {
+        setNavOpen(!header.classList.contains("is-open"));
+      });
+
+      primaryNav?.querySelectorAll("a, button").forEach((el) => {
+        el.addEventListener("click", () => {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            setNavOpen(false);
+          }
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          setNavOpen(false);
+        }
+      });
     </script>
   </body>
 </html>
