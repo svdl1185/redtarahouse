@@ -193,7 +193,7 @@ main {
   align-self: start;
   width: clamp(76px, 10vw, 104px);
   height: auto;
-  margin: 38px 0 0;
+  margin: -90px 0 0;
 }
 
 .section > :not(.section-art) {
