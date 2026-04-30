@@ -99,27 +99,27 @@ main {
   align-items: center;
   text-align: center;
   margin: 0 auto clamp(24px, 4vw, 36px);
-  max-width: min(96px, 100%);
+  max-width: min(150px, 100%);
 }
 
 .hero-brand-image {
-  width: min(72px, 22vw);
+  width: min(108px, 30vw);
   height: auto;
   display: block;
 }
 
 .hero h1 {
-  max-width: 900px;
+  max-width: 760px;
   margin: 14px 0 22px;
-  font-size: clamp(3rem, 7vw, 6.4rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
+  font-size: clamp(2.1rem, 4.6vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
 }
 
 .hero p {
   max-width: 680px;
   margin: 0;
-  color: var(--muted);
+  color: var(--accent);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 
@@ -172,7 +172,11 @@ main {
 }
 
 .section {
-  max-width: 920px;
+  display: grid;
+  grid-template-columns: minmax(78px, 128px) minmax(0, 1fr);
+  column-gap: clamp(28px, 6vw, 64px);
+  row-gap: 0;
+  max-width: 1060px;
   margin: 0 auto;
   padding: clamp(44px, 8vw, 88px) clamp(20px, 4vw, 54px);
 }
@@ -183,9 +187,17 @@ main {
 
 .section-art {
   display: block;
-  width: clamp(58px, 9vw, 84px);
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: start;
+  width: clamp(76px, 10vw, 104px);
   height: auto;
-  margin: 0 auto 24px;
+  margin: 38px 0 0;
+}
+
+.section > :not(.section-art) {
+  grid-column: 2;
 }
 
 .section-heading {
@@ -297,7 +309,7 @@ main {
 }
 
 .split {
-  display: block;
+  display: grid;
 }
 
 .sticky {
@@ -403,6 +415,7 @@ main {
 
   .cards.three,
   .cards.two,
+  .section,
   .guide-grid,
   .restaurant-list,
   .room-grid,
@@ -410,12 +423,21 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .section-art,
+  .section > :not(.section-art) {
+    grid-column: 1;
+  }
+
+  .section-art {
+    margin: 0 auto 24px;
+  }
+
   .sticky {
     position: static;
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 16vw, 5rem);
+    font-size: clamp(2.2rem, 10vw, 3.8rem);
   }
 
   .footer {
@@ -443,7 +465,6 @@ main {
   .card,
   .guide-card,
   .panel,
-  .wifi-banner,
   .restaurant-list > div {
     box-shadow: none;
     border-radius: 10px;
