@@ -39,8 +39,8 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 4vw, 54px);
-  background: rgba(247, 243, 237, 0.9);
-  border-bottom: 1px solid rgba(222, 210, 194, 0.75);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
 
