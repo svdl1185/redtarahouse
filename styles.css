@@ -9,10 +9,10 @@
   --sage: #d9dfd1;
   --shadow: 0 18px 50px rgba(52, 38, 25, 0.08);
   /* Match Tibetan section art (blue, white→black text, red, green, yellow) */
-  --art-blue: #1d4ed8;
-  --art-red: #b91c1c;
-  --art-green: #047857;
-  --art-yellow: #a16207;
+  --art-blue: #200c6e;
+  --art-red: #e31e13;
+  --art-green: #3c6847;
+  --art-yellow: #fde300;
 }
 
 * {
@@ -127,13 +127,18 @@ a {
 }
 
 @media (min-width: 769px) {
+  .site-header {
+    flex-wrap: nowrap;
+  }
+
   .nav-toggle {
     display: none !important;
   }
 
   .nav {
-    flex: 1;
-    justify-content: flex-start;
+    flex: 0 1 auto;
+    margin-left: auto;
+    justify-content: flex-end;
     min-width: 0;
   }
 }
@@ -378,6 +383,7 @@ main {
 #practical .card h3,
 #practical .subsection-title {
   color: var(--art-yellow);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 0 1px rgba(34, 29, 24, 0.35);
 }
 
 .panel h4 {
