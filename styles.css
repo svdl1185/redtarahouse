@@ -52,7 +52,7 @@ a {
 .brand {
   color: var(--accent);
   font-weight: 700;
-  font-size: clamp(1.12rem, 2.3vw, 1.38rem);
+  font-size: clamp(1.28rem, 2.8vw, 1.62rem);
   letter-spacing: -0.03em;
   text-decoration: none;
   line-height: 1.2;
@@ -300,9 +300,9 @@ main {
 .section-heading h2 {
   margin: 0;
   color: var(--ink);
-  font-size: clamp(1.85rem, 4vw, 3rem);
+  font-size: clamp(1.55rem, 3.35vw, 2.45rem);
   line-height: 1;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.055em;
 }
 
 .section-heading p {
@@ -382,8 +382,7 @@ main {
 
 #practical .card h3,
 #practical .subsection-title {
-  color: var(--art-yellow);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 0 1px rgba(34, 29, 24, 0.35);
+  color: var(--ink);
 }
 
 .panel h4 {
