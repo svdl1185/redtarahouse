@@ -1,4 +1,6 @@
 :root {
+  /* Same displayed width as hero Red Tara — reuse for footer strip + section marks */
+  --brand-mark-width: min(162px, 42vw);
   --bg: #ffffff;
   --paper: #fffaf2;
   --ink: #221d18;
@@ -196,7 +198,7 @@ main {
 }
 
 .hero-brand-image {
-  width: min(162px, 42vw);
+  width: var(--brand-mark-width);
   height: auto;
   display: block;
 }
@@ -267,7 +269,7 @@ main {
 
 .section {
   display: grid;
-  grid-template-columns: minmax(64px, 108px) minmax(0, 1fr);
+  grid-template-columns: var(--brand-mark-width) minmax(0, 1fr);
   column-gap: clamp(28px, 6vw, 64px);
   row-gap: 0;
   max-width: 1060px;
@@ -285,7 +287,7 @@ main {
   grid-row: 1;
   justify-self: center;
   align-self: start;
-  width: clamp(52px, 7vw, 72px);
+  width: var(--brand-mark-width);
   height: auto;
   margin: -68px 0 0;
 }
@@ -515,7 +517,7 @@ main {
 
 .bottom-art {
   display: block;
-  width: 100%;
+  width: var(--brand-mark-width);
   max-width: 100%;
   height: auto;
   margin: 0 auto;
