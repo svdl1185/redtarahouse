@@ -504,6 +504,22 @@ main {
   border-top: 1px solid var(--line);
 }
 
+.bottom-art-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: clamp(36px, 7vw, 72px) clamp(20px, 4vw, 54px)
+    clamp(28px, 5vw, 48px);
+  text-align: center;
+}
+
+.bottom-art {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .footer {
   display: flex;
   justify-content: center;
