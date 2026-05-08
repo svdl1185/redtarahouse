@@ -571,7 +571,7 @@ main {
   }
 
   .hero-brand {
-    margin-bottom: clamp(22px, 6vw, 34px);
+    margin-bottom: clamp(52px, 13vw, 82px);
   }
 
   .hero h1 {
