@@ -206,9 +206,10 @@ main {
 .hero h1 {
   max-width: 760px;
   margin: clamp(52px, 9vw, 88px) auto clamp(2px, 1vw, 8px);
-  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
   line-height: 1.03;
   letter-spacing: -0.045em;
+  color: var(--accent);
   text-align: center;
 }
 
