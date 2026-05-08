@@ -566,7 +566,7 @@ main {
 
 @media (max-width: 640px) {
   .hero {
-    padding-bottom: clamp(20px, 6vw, 34px);
+    padding-bottom: 0;
   }
 
   .hero-brand {
@@ -575,11 +575,11 @@ main {
 
   .hero h1 {
     margin-top: 0;
-    margin-bottom: clamp(24px, 6vw, 36px);
+    margin-bottom: clamp(18px, 5vw, 26px);
   }
 
   #sanctuary.section {
-    padding-top: clamp(24px, 6vw, 36px);
+    padding-top: 0;
   }
 
   .section,
