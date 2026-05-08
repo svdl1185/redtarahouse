@@ -566,17 +566,21 @@ main {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --mobile-mantra-gap: clamp(52px, 13vw, 82px);
+  }
+
   .hero {
     padding-bottom: 0;
   }
 
   .hero-brand {
-    margin-bottom: clamp(52px, 13vw, 82px);
+    margin-bottom: var(--mobile-mantra-gap);
   }
 
   .hero h1 {
     margin-top: 0;
-    margin-bottom: clamp(18px, 5vw, 26px);
+    margin-bottom: var(--mobile-mantra-gap);
   }
 
   #sanctuary.section {
