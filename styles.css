@@ -543,6 +543,16 @@ main {
   margin: 0;
 }
 
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.footer a:hover {
+  color: var(--accent-dark);
+}
+
 @media (max-width: 860px) {
   .cards.three,
   .cards.two,
