@@ -41,7 +41,7 @@ Point Stripe to `https://your-domain/api/stripe/webhook` for `checkout.session.c
 1. In each OTA, copy the **export/calendar** iCal URL.
 2. In `/admin`, add those URLs (Airbnb, Booking.com, VRBO).
 3. Copy the outbound feed shown in admin (`/api/calendar`) and **import** it into each OTA so direct bookings block those calendars.
-4. Vercel Cron runs sync every 30 minutes; you can also click **Sync all now**.
+4. Vercel Cron runs sync once daily on the Hobby plan (or click **Sync all now** anytime). Upgrade to Pro if you want more frequent automatic sync.
 
 iCal sync is eventually consistent — rare double-books are possible in the sync window. Advance notice and prep nights help.
 
