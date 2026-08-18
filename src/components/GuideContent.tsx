@@ -1,0 +1,609 @@
+export function GuideContent() {
+  return (
+    <>
+      <section id="sanctuary" className="section split">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="section-art"
+          src="/blue.png"
+          alt=""
+          width={2348}
+          height={4096}
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="section-heading sticky">
+          <p className="eyebrow">Your stay</p>
+          <h2>Sanctuary Notes</h2>
+          <p>Short, useful reminders for a comfortable stay.</p>
+        </div>
+        <div className="stack">
+          <article className="panel">
+            <h3>Check-in and checkout</h3>
+            <p>
+              Unless your confirmation lists different times, plan for{" "}
+              <strong>check-in after 4:00 PM</strong> and{" "}
+              <strong>checkout by 11:00 AM</strong>. Your confirmation is the
+              final reference for door codes and exact windows.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Guest guidelines</h3>
+            <ul className="check-list">
+              <li>No parties, events, or unregistered overnight guests.</li>
+              <li>Please keep food out of the bedrooms and beds.</li>
+              <li>
+                Pets are welcome when house broken, with a maximum of two pets.
+              </li>
+              <li>Please pick up after pets and keep pet food sealed.</li>
+              <li>
+                Only toilet paper goes in the toilets. Septic systems clog
+                easily.
+              </li>
+              <li>
+                Please do not use kiddie pools, blow-up pools, or anything that
+                heavily draws on the well.
+              </li>
+              <li>
+                The pond is for looking, not swimming or fishing. It is home to
+                koi and is not safe for people or pets.
+              </li>
+              <li>
+                Please be respectful of the golf course next door. Children
+                should not go on the course unattended.
+              </li>
+            </ul>
+          </article>
+
+          <article className="panel">
+            <h3>Bedrooms and bathrooms</h3>
+            <div className="room-grid">
+              <div>
+                <h4>Bedroom 1</h4>
+                <p>
+                  King bed. Open loft-style primary bedroom overlooking the
+                  living room, with adjacent full bathroom, jetted tub, and
+                  waterfall shower.
+                </p>
+              </div>
+              <div>
+                <h4>Bedroom 2</h4>
+                <p>
+                  Queen bed on the main floor with an attached full bathroom.
+                </p>
+              </div>
+              <div>
+                <h4>Bedroom 3</h4>
+                <p>
+                  Queen bed downstairs with an attached full bathroom.
+                </p>
+              </div>
+              <div>
+                <h4>Bedroom 4</h4>
+                <p>
+                  Queen bed plus a bunk bed downstairs, with an attached full
+                  bathroom.
+                </p>
+              </div>
+            </div>
+            <p className="note">
+              Extra blankets are usually in closets, dressers, and baskets in
+              the game room.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Kitchen, dining, and laundry</h3>
+            <ul className="check-list">
+              <li>
+                The kitchen is fully equipped, including cookware, serving
+                pieces, spices, oil, coffee, and tea.
+              </li>
+              <li>
+                Dishwasher pods are under the sink. Please keep wooden items out
+                of the dishwasher.
+              </li>
+              <li>
+                The dining table seats about 10. Game room stools can be used
+                for extra seating.
+              </li>
+              <li>
+                Grill utensils are stored on the back side of the kitchen island
+                near the refrigerator end.
+              </li>
+              <li>
+                The washer and dryer are between the kitchen and main floor
+                bathroom. Please empty the lint trap after each use.
+              </li>
+            </ul>
+          </article>
+
+          <article className="panel">
+            <h3>Water, Wi-Fi, and TV</h3>
+            <ul className="check-list">
+              <li>
+                The small tap on the right side of the kitchen sink provides
+                filtered drinking water. It may look cloudy for a few seconds
+                because of oxygen from the well.
+              </li>
+              <li>
+                A five-gallon water dispenser is also available in the kitchen.
+                Refills can be made at the Catskill Walmart.
+              </li>
+              <li>
+                Wi-Fi details are included in your booking confirmation.
+              </li>
+              <li>
+                There are TVs in the living room, primary bedroom, and downstairs
+                game room, with streaming options available.
+              </li>
+            </ul>
+          </article>
+
+          <article className="panel">
+            <h3>Heat, cooling, fireplace, and grill</h3>
+            <ul className="check-list">
+              <li>
+                Only one thermostat controls forced-air heating and cooling. The
+                other thermostats control radiant floor heat.
+              </li>
+              <li>The lower level has radiant heat only.</li>
+              <li>
+                If it is below 60 degrees outside, please do not run the AC.
+                Open windows instead.
+              </li>
+              <li>
+                The indoor gas fireplace is seasonal, usually mid-October
+                through April. Use the <strong>Gas fireplace</strong> steps
+                below to light and shut it down safely; leave only the pilot on
+                before bed.
+              </li>
+              <li>
+                Use the outdoor firepits carefully, keep fires contained, and
+                fully extinguish them when done.
+              </li>
+              <li>Please turn off the propane tank after grilling.</li>
+            </ul>
+          </article>
+
+          <article className="panel">
+            <h3>Gas fireplace</h3>
+            <p>Seasonal use only when allowed in the Heat section above.</p>
+            <p className="eyebrow panel-subhead">To turn on</p>
+            <ol className="steps">
+              <li>Open the damper.</li>
+              <li>
+                Turn the knob all the way to <strong>off</strong> (to the
+                right), then <strong>press it in</strong> (hold) and turn it
+                back a little to the <strong>left</strong>.
+              </li>
+              <li>
+                While still holding the knob in that position, press the large
+                ignitor button.
+              </li>
+              <li>
+                A small flame should appear; keep holding the knob in for{" "}
+                <strong>10–15 seconds</strong>.
+              </li>
+              <li>Release the knob—the flame should stay lit.</li>
+              <li>
+                Turn the fireplace on and rotate the knob all the way to{" "}
+                <strong>on</strong>.
+              </li>
+            </ol>
+            <p className="eyebrow panel-subhead">To turn off</p>
+            <ol className="steps">
+              <li>
+                Turn the knob all the way to off, press it in, then turn it all
+                the way further toward off.
+              </li>
+              <li>When the flame is out, finish turning off.</li>
+              <li>Close the damper.</li>
+            </ol>
+          </article>
+
+          <article className="panel">
+            <h3>Record player and Bluetooth speaker</h3>
+            <p className="eyebrow panel-subhead">Remote</p>
+            <ul className="check-list">
+              <li>
+                Select <strong>RCA</strong> for the record player.
+              </li>
+              <li>
+                Press the <strong>Bluetooth</strong> button for Bluetooth mode.
+              </li>
+              <li>
+                Use the <strong>blue button</strong> (under the Bluetooth
+                button) to pair a new phone or device.
+              </li>
+            </ul>
+            <p className="eyebrow panel-subhead">Record player</p>
+            <ul className="check-list">
+              <li>Place the record on the platter.</li>
+              <li>
+                Press <strong>Start</strong>—playback begins automatically.
+              </li>
+            </ul>
+          </article>
+
+          <article className="panel">
+            <h3>Game room and extras</h3>
+            <p>
+              The game room has a pool table, ping pong table, and air hockey.
+              Beach towels, outdoor blankets, a yoga mat, books, a Pack &apos;n
+              Play, a high chair, an air mattress, and room dividers are kept
+              around the house, usually in closets or basement storage benches.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="checkout" className="section">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="section-art"
+          src="/white.png"
+          alt=""
+          width={958}
+          height={1650}
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="section-heading">
+          <p className="eyebrow">Before you leave</p>
+          <h2>Checkout Checklist</h2>
+          <p>
+            Please finish before your checkout time—usually{" "}
+            <strong>11:00 AM</strong> unless your reservation lists another
+            time.
+          </p>
+        </div>
+        <div className="cards two">
+          <article className="card">
+            <h3>Please do</h3>
+            <ul className="check-list">
+              <li>Start the dishwasher or hand wash dishes.</li>
+              <li>Take perishable food you brought with you.</li>
+              <li>Put trash in the outdoor bins near the shed.</li>
+              <li>Turn off the propane tank if you used the grill.</li>
+              <li>
+                Close windows and doors, turn off lights, and lock the front
+                door properly before you leave.
+              </li>
+            </ul>
+          </article>
+          <article className="card">
+            <h3>No need to do</h3>
+            <ul className="check-list">
+              <li>No need to strip beds.</li>
+              <li>No need to gather towels.</li>
+              <li>
+                No need to over-clean. We just ask that the home is left tidy.
+              </li>
+            </ul>
+            <p className="note">
+              Please do not leave trash bags on the porch. Local raccoons are
+              very motivated.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="local-guide" className="section">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="section-art"
+          src="/red.png"
+          alt=""
+          width={2320}
+          height={4096}
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="section-heading">
+          <p className="eyebrow">Nearby</p>
+          <h2>Food, Drinks, and Groceries</h2>
+          <p>Hours change seasonally, so check before making a special trip.</p>
+        </div>
+
+        <div className="guide-grid">
+          <article className="guide-card">
+            <h3>Groceries</h3>
+            <ul>
+              <li>
+                <strong>Walmart Supercenter</strong>, 30 Catskill Commons -
+                fastest one-stop shop.
+              </li>
+              <li>
+                <strong>Price Chopper</strong>, 320 W Bridge Street - close
+                groceries, pharmacy, and beer.
+              </li>
+              <li>
+                <strong>Hannaford</strong>, 223 Main Street, Cairo - a fuller
+                grocery run, about 15 minutes.
+              </li>
+              <li>
+                <strong>Tops</strong>, 44 Hope Plaza, Coxsackie - useful if you
+                are coming from the north.
+              </li>
+            </ul>
+          </article>
+
+          <article className="guide-card">
+            <h3>Farm stands</h3>
+            <ul>
+              <li>
+                <strong>Black Horse Farms</strong>, Athens - year-round market
+                with produce, pies, prepared foods, gifts, and plants.
+              </li>
+              <li>
+                <strong>Story Farms</strong>, Catskill - seasonal farm stand on
+                NY-32. Often closed in winter.
+              </li>
+              <li>
+                <strong>Love Apple Farm</strong>, Ghent - produce, baked goods,
+                apple picking, and kid-friendly stops in season.
+              </li>
+            </ul>
+          </article>
+
+          <article className="guide-card">
+            <h3>Beer, wine, spirits</h3>
+            <ul>
+              <li>
+                <strong>Beer World</strong>, Catskill - large beer selection
+                near downtown.
+              </li>
+              <li>
+                <strong>Catskill Liquors</strong>, 344 W Bridge Street - wine
+                and spirits in the Price Chopper plaza.
+              </li>
+              <li>
+                <strong>Subversive Malting + Brewing</strong>, 96 W Bridge
+                Street - farmhouse brewery with food and outdoor seating.
+              </li>
+              <li>
+                <strong>Crossroads Brewing</strong>, Catskill - local brewery
+                near the creek.
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div className="restaurant-list">
+          <div>
+            <h3>Breakfast and coffee</h3>
+            <ul>
+              <li>
+                <strong>Willa&apos;s</strong> - longtime Catskill favorite
+                moving to Glen Falls House in Round Top in 2026. Check current
+                location before going.
+              </li>
+              <li>
+                <strong>Gracie&apos;s Luncheonette</strong>, Leeds - from-scratch
+                breakfast, brunch, doughnuts, and comfort food.
+              </li>
+              <li>
+                <strong>Le Perche</strong>, Hudson - bakery, pastries, brunch,
+                and French-leaning cafe food.
+              </li>
+              <li>
+                <strong>See &amp; Be Kitchen</strong>, Cairo - baked goods,
+                bread, and cafe stop on the way toward the mountains.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Lunch and dinner</h3>
+            <ul>
+              <li>
+                <strong>Angel&apos;s Latin</strong>{" "}
+                <span className="price">$</span>, Catskill - affordable, casual
+                Latin food.
+              </li>
+              <li>
+                <strong>Baba Louie&apos;s</strong>{" "}
+                <span className="price">$$</span>, Hudson - sourdough pizza with
+                creative toppings.
+              </li>
+              <li>
+                <strong>Creekside Restaurant</strong>{" "}
+                <span className="price">$$</span>, Catskill - American food and
+                waterfront seating on Catskill Creek.
+              </li>
+              <li>
+                <strong>Hemlock</strong> <span className="price">$$</span>,
+                Catskill - cozy cocktails and bar food; named by Esquire among
+                its 2025 best bars.
+              </li>
+              <li>
+                <strong>New York Restaurant</strong>{" "}
+                <span className="price">$$-$$$</span>, Catskill - New American
+                and Polish-inspired dishes downtown.
+              </li>
+              <li>
+                <strong>Feast &amp; Floret</strong>{" "}
+                <span className="price">$$$</span>, Hudson - Italian dinner and a
+                polished date-night feel.
+              </li>
+              <li>
+                <strong>Rivertown Lodge</strong>{" "}
+                <span className="price">$$$</span>, Hudson - dinner, brunch, and
+                cocktails in a relaxed hotel setting.
+              </li>
+              <li>
+                <strong>The Maker / Serre</strong>{" "}
+                <span className="price">$$$</span>, Hudson - hotel lounge, cafe,
+                cocktails, and a newly rebranded French-influenced restaurant.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="outdoors" className="section split">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="section-art"
+          src="/green.png"
+          alt=""
+          width={2336}
+          height={4096}
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="section-heading sticky">
+          <p className="eyebrow">Outside</p>
+          <h2>Outdoor highlights</h2>
+          <p>A few favorite outings near Red Tara Sanctuary.</p>
+        </div>
+        <div className="stack">
+          <article className="panel">
+            <h3>Golf next door</h3>
+            <p>
+              <strong>Catskill Golf Club</strong> (
+              <a
+                href="https://catskillgolfclub.com/"
+                rel="noopener noreferrer"
+              >
+                catskillgolfclub.com
+              </a>
+              ) sits right beside our lawn. Please treat it as private property:
+              walk only where invited, keep voices low for players, and do not
+              practice swings or hit balls onto the fairway. Children should
+              never be on the course unsupervised, and please avoid using the
+              course after hours.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Ski resorts</h3>
+            <p>
+              Hunter Mountain and Windham Mountain are both classic Catskills
+              ski areas within easy driving distance for a winter day trip.
+              Check each resort for lift tickets, lesson schedules, and snow
+              conditions before you go.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Kaaterskill Falls</h3>
+            <p>
+              New York State&apos;s tallest cascading waterfall is a memorable
+              outing. Use only designated DEC parking (Laurel House Road, Scutt
+              Road, or North-South Lake area). Do not park on Route 23A or
+              roadside pull-offs where prohibited. Trails can be icy, crowded,
+              and steep in places; swimming near the falls is dangerous.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Olana State Historic Site</h3>
+            <p>
+              Frederic Church&apos;s hilltop home and studio near Hudson
+              combines architecture, art, and sweeping river views with walking
+              paths and seasonal tours. For background and visitor basics, see{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Olana_State_Historic_Site"
+                rel="noopener noreferrer"
+              >
+                Olana State Historic Site on Wikipedia
+              </a>
+              . Confirm current hours and tickets with the site before you go.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Won Dharma Center</h3>
+            <p>
+              <strong>Won Dharma Center</strong> in Claverack (about 25 minutes
+              south) is an open community focused on mindfulness: meditation,
+              retreats, yoga, qigong, and workshops, with trails and wide-open
+              views of the Catskills on hundreds of acres. Program schedules
+              change seasonally—see{" "}
+              <a href="https://wondharmacenter.org/" rel="noopener noreferrer">
+                wondharmacenter.org
+              </a>{" "}
+              for dates and registration.
+            </p>
+          </article>
+
+          <article className="panel">
+            <h3>Menla</h3>
+            <p>
+              <strong>Menla Retreat &amp; Dewa Spa</strong> (Phoenicia) is a
+              Tibetan-inspired wellness and retreat center in the Catskill Forest
+              Preserve: spa treatments, yoga and meditation programs, trails, and
+              seasonal retreats. Visit{" "}
+              <a href="https://www.menla.org/" rel="noopener noreferrer">
+                menla.org
+              </a>{" "}
+              for reservations and schedules.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="practical" className="section">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="section-art"
+          src="/yellow.png"
+          alt=""
+          width={2348}
+          height={4096}
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="section-heading">
+          <p className="eyebrow">Useful to know</p>
+          <h2>Practical Notes</h2>
+        </div>
+        <h3 className="subsection-title">Everyday essentials</h3>
+        <div className="cards three">
+          <article className="card">
+            <h3>Trash and recycling</h3>
+            <p>
+              Outdoor bins are near the shed. Pickup is typically Wednesday,
+              with bins placed near the top of the driveway.
+            </p>
+          </article>
+          <article className="card">
+            <h3>Ticks and outdoors</h3>
+            <p>
+              Ticks are common in the area. Check yourself, children, and pets
+              after walking through grass, woods, or brush.
+            </p>
+          </article>
+          <article className="card">
+            <h3>Supplies nearby</h3>
+            <p>
+              Walmart, Home Depot, and Lowe&apos;s are all close by for forgotten
+              basics, hardware, outdoor gear, or pet supplies.
+            </p>
+          </article>
+        </div>
+        <div className="practical-divider" aria-hidden="true" />
+        <div className="cards two">
+          <article className="card">
+            <h3>Medical and pharmacy</h3>
+            <p>
+              Price Chopper and Hannaford have pharmacies nearby. For urgent
+              medical needs, search current local urgent care availability or
+              use emergency services.
+            </p>
+          </article>
+          <article className="card">
+            <h3>Pets</h3>
+            <p>
+              Catskill Animal Hospital is a nearby veterinary option for routine
+              needs. For after-hours emergencies, call ahead to confirm the
+              closest open emergency vet.
+            </p>
+          </article>
+        </div>
+      </section>
+    </>
+  );
+}

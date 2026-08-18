@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Settings {
+  id        String   @id @default("default")
+  data      String
+  updatedAt DateTime @updatedAt
+}
+
+model RateOverride {
+  id          String   @id @default(cuid())
+  startDate   String
+  endDate     String
+  weekdayRate Int
+  weekendRate Int
+  note        String?
+  createdAt   DateTime @default(now())
+}
+
+model BlockedDate {
+  id        String   @id @default(cuid())
+  startDate String
+  endDate   String
+  note      String?
+  createdAt DateTime @default(now())
+}
+
+model IcalSource {
+  id           String          @id @default(cuid())
+  name         String
+  url          String
+  lastSyncedAt DateTime?
+  lastError    String?
+  createdAt    DateTime        @default(now())
+  blocks       ExternalBlock[]
+}
+
+model ExternalBlock {
+  id        String     @id @default(cuid())
+  sourceId  String
+  uid       String
+  startDate String
+  endDate   String
+  summary   String?
+  updatedAt DateTime   @updatedAt
+  source    IcalSource @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceId, uid])
+  @@index([startDate, endDate])
+}
+
+model Booking {
+  id                     String    @id @default(cuid())
+  checkIn                String
+  checkOut               String
+  guests                 Int
+  pets                   Int
+  guestName              String
+  guestEmail             String
+  nightsSubtotal         Int
+  cleaningFee            Int
+  petFee                 Int
+  extraGuestFee          Int
+  taxAmount              Int       @default(0)
+  totalCents             Int
+  currency               String    @default("usd")
+  status                 String    @default("pending")
+  stripeSessionId        String?   @unique
+  stripePaymentIntentId  String?
+  holdUntil              DateTime?
+  quoteSnapshot          String
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+
+  @@index([checkIn, checkOut])
+  @@index([status])
+}
