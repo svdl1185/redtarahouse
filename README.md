@@ -79,3 +79,4 @@ Private access details (door codes, Wi-Fi passwords) must not be committed to th
 ## Docs
 
 - [OTA calendar setup](docs/ota-calendar-setup.md)
+
