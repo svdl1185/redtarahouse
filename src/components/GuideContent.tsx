@@ -423,6 +423,16 @@ export function GuideContent() {
                 and Polish-inspired dishes downtown.
               </li>
               <li>
+                <strong>Casa Susanna</strong>{" "}
+                <span className="price">$$$</span>, Leeds - modern Mexican at
+                Camptown; reservations recommended.
+              </li>
+              <li>
+                <strong>Julia&apos;s Local</strong>{" "}
+                <span className="price">$$$</span>, Round Top - rustic American
+                with a Scandinavian twist; tiny, so book ahead.
+              </li>
+              <li>
                 <strong>Feast &amp; Floret</strong>{" "}
                 <span className="price">$$$</span>, Hudson - Italian dinner and a
                 polished date-night feel.
